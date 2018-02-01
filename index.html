@@ -1,0 +1,56 @@
+<!-- Original code by Bethany Davies as part of CS25320 Assignment  -->
+	 <!-- created 30th November 2017 -->
+	 <!-- Updated on the 14th of December -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CS25320 Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!--On the load of the body the title screen is drawnis started-->
+<body onLoad="drawTitleScreen()">
+
+	<h1>Escape from Merribank Prison</h1>
+	<h2> Home </h2>
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="help.html">Help</a></li>
+	<li><a href="scorebored.php">Scorebored</a></li>
+</ul>
+
+<form action="scorebord.php" method="post">
+Name: <input type="text" name="name" id="name"><br>
+<input type="submit">
+</form>
+
+
+<!-- Adding a canvas to my home page -->
+<canvas id="myCanvas" width ="500" height="300" style="border:1px solid" ></canvas>
+
+<br>
+<!--Buttons that are used in certain parts in the game-->
+<button id ="start" onclick="startGame()">Start Game</button>
+<button id ="help" onclick ="helpPage()"> Help Page</button> 
+
+
+<article>
+    <h3> Disclaimer </h3>
+
+    <p>
+        The information provided on this and other pages by me, Bethany Davies (bed36@aber.ac.uk), is
+        under my own personal responsibility and not that of Aberystwyth University. Similarly,
+        any opinions expressed are my own and are in no way to be taken as those of A.U.
+    </p>
+</article>
+<footer>
+ 
+</footer>
+
+<script src ="script.js"></script>
+</body>
+</html>
